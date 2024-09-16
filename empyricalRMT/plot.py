@@ -560,6 +560,7 @@ def _brody_fit(
     ax: Axes
     axes: Any
     fig, axes = plt.subplots(1, 2, sharex=True, sharey=True, squeeze=False)
+    axes = axes.ravel()
     _spacings(
         unfolded=unfolded,
         bins=bins,

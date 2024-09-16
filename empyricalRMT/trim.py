@@ -646,7 +646,7 @@ class TrimReport:
                 # additional columns of values per smoother:
                 arr[i, 4 * j + 3] = mean
                 arr[i, 4 * j + 4] = var
-                arr[i, 4 * j + 5] = trim.msqes[col]
+                arr[i, 4 * j + 5] = trim.msqes[col][0]
                 arr[i, 4 * j + 6] = score
 
         col_names_final = ["trim_percent", "trim_low", "trim_high"]
